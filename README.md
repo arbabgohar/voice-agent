@@ -32,9 +32,10 @@ python main.py
 
 ## Features
 
-- Voice input using sounddevice and SpeechRecognition
+- Voice input using sounddevice for audio capture
+- Speech-to-text using Google Speech Recognition API
 - AI responses using OpenAI's GPT-3.5
-- Text-to-speech output using macOS's built-in speech synthesizer
+- Text-to-speech output using macOS's built-in 'say' command
 - Conversation memory for context-aware responses
 
 ## Requirements
@@ -42,4 +43,5 @@ python main.py
 - Python 3.x
 - macOS (for text-to-speech)
 - Active OpenAI API key with available quota
-- Microphone access 
+- Microphone access
+- Internet connection for Google Speech Recognition and OpenAI API 
