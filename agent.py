@@ -27,14 +27,12 @@ class Agent:
                 max_tokens=150
             )
             
-            # Extract assistant's response
+            # Extract and store assistant's response
             assistant_response = response.choices[0].message.content
-            
-            # Add assistant's response to conversation history
             self.conversation_history.append({"role": "assistant", "content": assistant_response})
             
             return assistant_response
             
         except Exception as e:
-            print(f"Error in getting response from OpenAI: {e}")
-            return "I encountered an error. Please make sure your OpenAI API key is set correctly." 
+            print(f"Error in OpenAI API call: {e}")
+            return "I encountered an error. Please try again." 
