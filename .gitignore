@@ -1,0 +1,18 @@
+# Ignore virtual environments
+venv/
+
+# Bytecode
+__pycache__/
+*.py[cod]
+
+# Environment variables
+.env
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# Editor folders
+.vscode/

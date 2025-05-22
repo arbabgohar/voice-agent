@@ -3,7 +3,7 @@ import os
 
 class Agent:
     def __init__(self):
-        self.client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
+        self.client = OpenAI()  # It will automatically use OPENAI_API_KEY from environment
         self.conversation_history = [
             {"role": "system", "content": "You are a helpful voice-enabled AI assistant. Provide clear and concise responses."}
         ]

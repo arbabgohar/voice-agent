@@ -1,14 +1,18 @@
 import os
+from dotenv import load_dotenv
 from speech_input import VoiceInput
 from speech_output import VoiceOutput
 from agent import Agent
 
 def main():
+    # Load environment variables from .env file
+    load_dotenv()
+    
     # Check for OpenAI API key
     if not os.getenv('OPENAI_API_KEY'):
         print("Error: OPENAI_API_KEY environment variable is not set.")
-        print("Please set your OpenAI API key first:")
-        print("export OPENAI_API_KEY='your-api-key-here'")
+        print("Please create a .env file with your OpenAI API key:")
+        print("OPENAI_API_KEY='your-api-key-here'")
         return
 
     print("Initializing voice assistant...")
