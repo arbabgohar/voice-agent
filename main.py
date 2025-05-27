@@ -12,7 +12,7 @@ def main():
     if not os.getenv('OPENAI_API_KEY'):
         print("Error: OPENAI_API_KEY environment variable is not set.")
         print("Please create a .env file with your OpenAI API key:")
-        print("OPENAI_API_KEY='your-api-key-here'")
+        print("OPENAI_API_KEY='your api key here'")
         return
 
     print("Initializing voice assistant...")
